@@ -15,7 +15,7 @@ const Spaceship = {
   },
   travel: function (distance) {
     console.log('trying to travel: ' + distance);
-    if (Spaceship.fuel == 0) {
+    if (Spaceship.fuel === 0) {
       console.log('Can not go further, tank is empty!');
     } else {
       Spaceship.fuel = Spaceship.fuel - (distance / 2);
